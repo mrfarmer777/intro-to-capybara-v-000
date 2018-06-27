@@ -12,7 +12,7 @@ describe "GET '/' - Greeting Form" do
     visit '/'
 
     expect(page).to have_selector("form")   #have something that the selector can find, called form, like a query seclector
-    expect(page).to have_field(:user_name)  #find a form field name, has to match here!!, Apparently has to be a token as well.
+    expect(page).to have_field(:user_name)  #find a form field name, has to match here!!, Apparently has to be a symbol as well.
   end
 end
 
